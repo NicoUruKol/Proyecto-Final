@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    }
+
+#primera-linea {
+    margin: 0px; /*margin establece el margen para los cuatro lados*/
+    padding: 0px; /*padding establece el espacio de relleno*/
+    background-color: rgb(96,0,0); /*cambia el color de relleno*/
+    font-family: Verdana; /*cambia el tipo de letra*/
+    }
+
+#header-list {
+    background-color: rgb(96,0,0); /*cambia el color de relleno*/
+    font-family: Verdana; /*cambia el tipo de letra*/
+    text-decoration: none;
+    }
+
+header {
+    background-color: rgb(200,186,159); /*cambia el color de relleno*/
+    font-family: Verdana; /*cambia el tipo de letra*/
+    }
+
+a{
+    text-decoration: none;
+}
+
