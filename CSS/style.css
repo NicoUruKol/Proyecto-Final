@@ -7,21 +7,38 @@
     margin: 0px; /*margin establece el margen para los cuatro lados*/
     padding: 0px; /*padding establece el espacio de relleno*/
     background-color: rgb(96,0,0); /*cambia el color de relleno*/
-    font-family: Verdana; /*cambia el tipo de letra*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     }
 
 #header-list {
     background-color: rgb(96,0,0); /*cambia el color de relleno*/
-    font-family: Verdana; /*cambia el tipo de letra*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     text-decoration: none;
     }
 
 header {
     background-color: rgb(200,186,159); /*cambia el color de relleno*/
-    font-family: Verdana; /*cambia el tipo de letra*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     }
 
 a{
     text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h2 {
+    background-color: rgb(96,0,0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: gray;
+}
