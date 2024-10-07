@@ -5,40 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tannat & Co.</title>
     <link rel="icon" href="imagenes/logo PNG.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <form action="" method="POST">
+        <div id="primera-linea">
+            <form action="" method="POST">
                 <input name="buscar" id="buscar" type="text" placeholder="Buscar">
+            </div>
         <nav>
+            <div id="header-list">
+                <ul>
+                    <li>
+                        <a href="crearcuenta.html"
+                        title="Crea tu cuenta">Crear Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="iniciarsesion.html"
+                        title="Inicia sesión">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="https://nicourukol.github.io/Proyecto-Final/">
+                    <img src="imagenes/logo PNG.png" width="100" alt="TANNAT&CO" class="logo-img">
+                </a>
+            </div>
+            <div>
+                <h1>Bienvenidos a Tannat & CO.</h1>
+                <p><STROng>Alma Oriental</STROng></p>
+            </div>
+
             <ul>
-                    <a href="crearcuenta.html"
-                    title="Crea tu cuenta">Crear Cuenta</a>
-                    <a href="iniciarsesion.html"
-                    title="Inicia sesión">Iniciar Sesión</a>
-            </ul>
-            <img src="imagenes/logo PNG.png" width="100" alt="">
-            <h1>Bienvenidos a Tannat & CO.</h1>
-            <p><STROng>Alma Oriental</STROng></p>
-            <ul>
+                <li>
                     <a href=""
                     title="Nosotros">Quienes Somos</a>
+                </li>
+                <li>
                     <a href=""
                     title="Port Folio">Bodegas</a>
+                </li>
+                <li>
                     <a href=""
                     title="Agenda de eventos">Degustaciones</a>
+                </li>
+                <li>
                     <a href=""
                     title="Maridajes">Sommelier Online</a>
+                </li>
+                <li>
                     <a href=""
                     title="Tus compras">Carrito</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="banner">
-            <h1>Aca ponemos banners</h1>
-            <!--un banner para entrega a domicilio-->
-            <!--un banner para ventas x mayor-->
+            <h1>Aca ponemos banners con slide</h1>
+            <div>
+                <a href="mailto:ventas@tannat&co.com">
+                    <img src="imagenes/banner x mayor slide.webp" alt="" width="100%">
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="imagenes/banner x delivery slide.webp" alt="" width="100%">
+                </a>
+            </div>
             <!--un banner para show room-->
         </section>
 
@@ -75,12 +109,19 @@
                 </video>
             </div>
             <div id="novedades-list2">
-                <!-- falta cargar-->
                 <video 
-                src="" 
+                src="videos/Uruguay entre Viñas - Bodega Garzón.mp4" 
                 controls
                 autoplay
                 width="350">
+                <track src="./videos/Uruguay entre Viñas - Bodega Garzón [Spanish (auto-generated).vtt"
+                srclang="es"
+                label="Español"
+                default>
+                <track
+                src="videos/Uruguay entre Viñas - Bodega Garzón [English] [translated] [DownloadYoutubeSubtitles.com].vtt"
+                srclang="en"
+                label="Ingles">       
                 </video>
             </div>
         </section>
