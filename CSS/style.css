@@ -21,7 +21,7 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     }
 
-a{
+a   {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
