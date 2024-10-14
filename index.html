@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Tannat & Co.</title>
     <link rel="icon" href="imagenes/logo PNG.ico">
+    <script src="https://kit.fontawesome.com/3d0581f6cb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="primera-linea">
+        <div class="separador">
             <form action="" method="POST">
                 <input name="buscar" id="buscar" type="text" placeholder="Buscar">
         </div>
@@ -18,7 +19,7 @@
             <div id="header-list">
                 <ul>
                     <li>
-                        <img src="imagenes/user.svg" width="13" alt="">
+                        <img src="imagenes/user.svg" width="12" alt="">
                         <a href="crearcuenta.html"
                         title="Crear cuenta"> Crear cuenta</a>
                     </li>
@@ -33,37 +34,39 @@
                     <img src="imagenes/logo PNG.png" width="100" alt="TANNAT&CO" class="logo-img">
                 </a>
             </div>
-            <div>
-                <h1>Bienvenidos a Tannat & CO.</h1>
-                <p><strong>Alma Oriental</strong></p>
-            </div>
 
             <ul>
                 <li>
                     <a href=""
-                    title="Nosotros">Quienes Somos</a>
+                    title="Nosotros" class="corte-info">Quienes Somos</a>
                 </li>
                 <li>
                     <a href=""
-                    title="Port Folio">Bodegas</a>
+                    title="Port Folio" class="corte-info">Bodegas</a>
                 </li>
                 <li>
                     <a href=""
-                    title="Agenda de eventos">Degustaciones</a>
+                    title="Agenda de eventos" class="corte-info">Degustaciones</a>
                 </li>
                 <li>
                     <a href=""
-                    title="Maridajes">Sommelier Online</a>
+                    title="Maridajes" class="corte-info">Sommelier Online</a>
                 </li>
                 <li>
                     <a href=""
-                    title="Tus compras">Carrito
-                    <img src="./imagenes/shopping-cart.svg" alt="" width="20">
+                    title="Tus compras" class="corte-info">Carrito
+                    <img src="./imagenes/cart-shopping-solid.svg" alt="" width="20">
                     </a>
                 </li>
             </ul>
+
+            <div class="separador" id="banner-principal">
+                <h1>Bienvenidos a Tannat & CO.</h1>
+                <p><strong>Alma Oriental</strong></p>
+            </div>
         </nav>
     </header>
+
     <main>
         <section id="banner">
             <h1>Aca ponemos banners con slide</h1>
@@ -77,21 +80,46 @@
                     <img src="imagenes/banner x delivery slide.webp" alt="" width="100%">
                 </a>
             </div>
-            <!--un banner para show room-->
+        </section>
+
+        <section class="corte-info">
+            <div>
+                <img src="imagenes/house-laptop-solid.svg" alt="" width="30">
+                <p><strong>hacemos envios</strong></p>
+                <p>a todo el pais</p>
+            </div>
+            <div>
+                <img src="imagenes/credit-card-solid.svg" alt="" width="30">
+                <p><strong>3 cuotas sin interes</strong></p>
+                <p>con todas tus tarjetas</p>
+            </div>
+            <div>
+                <img src="imagenes/truck-solid.svg" alt="" width="30">
+                <p><strong>envios gratis</strong></p>
+                <p>a CABA desde $ 30.000</p>
+            </div>
         </section>
 
         <section id="promos">
             <h2>COMBOS CON DESCUENTO</h2>
             <div id="promos-lista">
-            <!--3 imagenes con texto-->
                 <a href="">
                     <img src="imagenes/duoCaroGarzon.jpg" alt="" width="300">
+                </a>
+                <a href="">
+                    <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
                 </a>
                 <a href="">
                     <img src="imagenes/GarzonCopas.jpg" alt="" width="300">
                 </a>
                 <a href="">
+                    <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                </a>
+                <a href="">
                     <img src="imagenes/GrazonBlanco.jpg" alt="" width="300">
+                </a>
+                <a href="">
+                    <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
                 </a>
             </div>
         </section>
@@ -137,7 +165,8 @@
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="corte-info">
         <p><strong>NEWSLETTER</strong></p>
         <form action="" method="POST">
             <label for="nombre">Nombre
@@ -146,8 +175,8 @@
             <label for="mail">Mail
                 <input name="mail" id="mail" type="email" placeholder="tucorreo@ejemplo.com">
             </label>
-
         </form>
+
         <ul>               
                 <a href="">
                     <img src="imagenes/instagram.svg" width="20" alt="">
@@ -159,10 +188,13 @@
                 <img src="imagenes/facebook.svg" width="20" alt="">
                 </a>
         </ul>
-        <a href="">Contacto</a>
-        <a href="">Quienes Somos</a>
-        <a href="">Preguntas Frecuentes</a>
-        <a href="">Politicas de Reembolso</a>
+
+        <section>
+            <a href="" class="corte-info">Contacto</a>
+            <a href="" class="corte-info">Quienes Somos</a>
+            <a href="" class="corte-info">Preguntas Frecuentes</a>
+            <a href="" class="corte-info">Politicas de Reembolso</a>
+        </section>
     </footer>
     
 </body>

@@ -1,44 +1,76 @@
+:root{
+    --color-separador: rgb(87,27,45);
+    --color-fondo: rgb(245,245,245);
+    --color-foot: rgb(210,210,210);
+    --color-header: rgb(200,186,159);
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-#primera-linea {
+.separador {
     margin: 0px; /*margin establece el margen para los cuatro lados*/
-    padding: 0px; /*padding establece el espacio de relleno*/
-    background-color: rgb(96,0,0); /*cambia el color de relleno*/
+    padding: 10px; /*padding establece el espacio de relleno*/
+    background-color: var(--color-separador);
+    color: var(--color-fondo);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     }
 
 #header-list {
-    background-color: rgb(96,0,0); /*cambia el color de relleno*/
+    padding: 10px;
+    background-color: var(--color-separador);
+    color: var(--color-fondo);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     text-decoration: none;
+    list-style: none;
     }
 
 header {
-    background-color: rgb(200,186,159); /*cambia el color de relleno*/
+    background-color: var(--color-header);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
     }
 
-a   {
+#banner-principal {
+    background-image: url('../imagenes/01-Uruguay-Tannat.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+}
+
+.corte-info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color-separador);
+    text-transform: uppercase;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: white;
+    list-style: none;
+    }
+
+
+a   {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-fondo);
     text-transform: uppercase;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2 {
-    background-color: rgb(96,0,0);
+    background-color: var(--color-separador);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+    color: var(--color-fondo);
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--color-fondo);
 }
 
 footer {
-    background-color: gray;
+    padding: 10px;
+    background-color: var(--color-foot);
 }
