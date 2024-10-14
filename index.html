@@ -11,60 +11,64 @@
 
 <body>
     <header>
-        <div class="separador">
-            <form action="" method="POST">
-                <input name="buscar" id="buscar" type="text" placeholder="Buscar">
-        </div>
         <nav>
-            <div id="header-list">
-                <ul>
-                    <li>
+            <div class="flex-container">
+                <div class="buscador">
+                    <form action="" method="POST" id="ventana-buscador">
+                        <input name="buscar" id="buscar" type="text" placeholder="Buscar">
+                </div>
+                <div class="header-list">
+                    <div>
                         <img src="imagenes/user.svg" width="12" alt="">
                         <a href="crearcuenta.html"
                         title="Crear cuenta"> Crear cuenta</a>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <a href="iniciarsesion.html"
                         title="Inicia sesión">Iniciar Sesión</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://nicourukol.github.io/Proyecto-Final/">
-                    <img src="imagenes/logo PNG.png" width="100" alt="TANNAT&CO" class="logo-img">
-                </a>
-            </div>
-
-            <ul>
-                <li>
-                    <a href=""
-                    title="Nosotros" class="corte-info">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Port Folio" class="corte-info">Bodegas</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Agenda de eventos" class="corte-info">Degustaciones</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Maridajes" class="corte-info">Sommelier Online</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Tus compras" class="corte-info">Carrito
-                    <img src="./imagenes/cart-shopping-solid.svg" alt="" width="20">
+            <div class="flex-container-nav">
+                <div class="logo-container">
+                    <a href="https://nicourukol.github.io/Proyecto-Final/">
+                        <img src="imagenes/logo PNG.png" width="80" alt="TANNAT&CO" class="logo-img">
                     </a>
-                </li>
-            </ul>
-
-            <div class="separador" id="banner-principal">
-                <h1>Bienvenidos a Tannat & CO.</h1>
-                <p><strong>Alma Oriental</strong></p>
+                </div>
+                    <ul>
+                        <li class="nav-list">
+                            <a href=""
+                            title="Nosotros" class="corte-info">Quienes Somos</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href=""
+                            title="Port Folio" class="corte-info">Bodegas</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href=""
+                            title="Agenda de eventos" class="corte-info">Degustaciones</a>
+                        </li>
+                        <li class="nav-list"    >
+                            <a href=""
+                            title="Maridajes" class="corte-info">Sommelier Online</a>
+                        </li>
+                    </ul>
+                <div class="carrito-container">
+                    <a href=""
+                    title="Tus compras" class="corte-info">
+                        <img src="imagenes/cart-shopping-solid.svg" alt="" width="40">
+                    </a>
+                </div>
+                
             </div>
         </nav>
+
+        <div class="separador" id="banner-principal">
+            <p>Bienvenidos a</p>
+            <h1><strong>Tannat & CO.</strong></h1>
+            <p><strong>Alma Oriental</strong></p>
+        </div>
+
     </header>
 
     <main>

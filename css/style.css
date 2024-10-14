@@ -2,43 +2,79 @@
     --color-separador: rgb(87,27,45);
     --color-fondo: rgb(245,245,245);
     --color-foot: rgb(210,210,210);
-    --color-header: rgb(200,186,159);
+    --color-header: rgb(237, 227, 206);
 }
 
 * {
     margin: 0%;
-    padding: 0%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
     }
 
-.separador {
-    margin: 0px; /*margin establece el margen para los cuatro lados*/
-    padding: 10px; /*padding establece el espacio de relleno*/
+.flex-container{
+    display: flex;
+    height: 35px;
+    width: 100%;
     background-color: var(--color-separador);
-    color: var(--color-fondo);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
-    }
-
-#header-list {
-    padding: 10px;
-    background-color: var(--color-separador);
-    color: var(--color-fondo);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
-    text-decoration: none;
+    padding: 0px;
     list-style: none;
     }
 
-header {
-    background-color: var(--color-header);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*cambia el tipo de letra*/
+.flex-container div{
+    justify-content: center;
+    list-style: none;
+    margin: 0px 0px 5px;
     }
 
-#banner-principal {
-    background-image: url('../imagenes/01-Uruguay-Tannat.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 30vw;
-}
+.buscador {
+    margin: 0px 0px 5px;
+    padding: 5px 5px 5px;
+    height: 30px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+#ventana-buscador{
+    height: 6vh;
+    padding: 2px;
+    justify-content: center;
+    }
+
+.header-list {
+    display: flex;
+    width: 100%;
+    color: var(--color-fondo);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+    justify-content: left;
+    margin: 8px 0px 8px;
+    padding: 7px 200px 5px 20px;
+    }
+
+.flex-container-nav{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    padding: 10px 0px 10px 10px;
+    list-style: none;
+    align-items: center;
+    justify-items: right;
+    }
+
+.logo-container{
+    justify-content: center;
+    }
+
+.nav-list {
+    margin: 0px;
+    display: inline-flex; 
+    color: var(--color-separador);
+    height: 30px;
+    list-style: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-items: left;
+    }
 
 .corte-info {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -50,6 +86,37 @@ header {
     list-style: none;
     }
 
+.carrito-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    }
+
+.separador {
+    margin: 0px; 
+    background-color: var(--color-separador);
+    color: var(--color-fondo);
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+#banner-principal {
+    background-image: url('01-Uruguay-Tannat.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vw;
+    max-width: 100%;
+    padding: 40px;
+    font-size: 5vw;
+    text-align: center;
+    color: var(--color-header);
+    margin: 0 auto;
+    }
+
+header {
+    background-color: var(--color-header);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
 a   {
     padding: 10px;
@@ -58,19 +125,19 @@ a   {
     text-transform: uppercase;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    }
 
 h2 {
     background-color: var(--color-separador);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--color-fondo);
-}
+    }
 
 body {
     background-color: var(--color-fondo);
-}
+    }
 
 footer {
     padding: 10px;
     background-color: var(--color-foot);
-}
+    }
