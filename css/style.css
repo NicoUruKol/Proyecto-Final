@@ -18,6 +18,7 @@
     background-color: var(--color-separador);
     padding: 0px;
     list-style: none;
+    text-align: center;
     }
 
 .flex-container div{
