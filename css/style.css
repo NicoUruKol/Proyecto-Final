@@ -17,12 +17,10 @@
     width: 100%;
     background-color: var(--color-separador);
     padding: 0px;
-    list-style: none;
     }
 
 .flex-container div{
     justify-content: center;
-    list-style: none;
     margin: 0px 0px 5px;
     }
 
@@ -45,8 +43,6 @@
     width: 100%;
     color: var(--color-fondo);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    list-style: none;
     justify-content: left;
     margin: 8px 0px 8px;
     padding: 7px 200px 5px 20px;
@@ -54,12 +50,11 @@
 
 .flex-container-nav{
     display: flex;
-    width: 100%;
-    height: 75px;
+    justify-content: space-between;
+    height: 80px;
+    width: 98.vw;
     padding: 10px 0px 10px 10px;
-    list-style: none;
     align-items: center;
-    justify-items: right;
     }
 
 .logo-container{
@@ -71,7 +66,6 @@
     display: inline-flex; 
     color: var(--color-separador);
     height: 30px;
-    list-style: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     justify-items: left;
     }
@@ -82,14 +76,15 @@
     text-transform: uppercase;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    list-style: none;
     }
 
 .carrito-container{
     display: flex;
-    justify-content: right;
     align-items: center;
+    border-color: var(--color-separador);
+    background-color: var(--color-foot);
+    height: 80px;
+
     }
 
 .separador {
@@ -97,7 +92,7 @@
     background-color: var(--color-separador);
     color: var(--color-fondo);
     height: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
 #banner-principal {
@@ -118,6 +113,19 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
+.corte-info{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+}
+
+.corte-perse{
+    display: inline-block;
+    width: 200px;
+    justify-content: center;
+}
+
 a   {
     padding: 10px;
     text-decoration: none;
@@ -126,6 +134,10 @@ a   {
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+li  {
+    list-style: none;
+}
 
 h2 {
     background-color: var(--color-separador);
