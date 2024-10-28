@@ -3,70 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tannat & Co.</title>
-    <link rel="icon" href="imagenes/logo PNG.ico">
+    <link rel="icon" href="../imagenes/logo PNG.ico">
+    <script src="https://kit.fontawesome.com/3d0581f6cb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div id="primera-linea">
-            <form action="" method="POST">
-                <input name="buscar" id="buscar" type="text" placeholder="Buscar">
-        </div>
         <nav>
-            <div id="header-list">
-                <ul>
-                    <li>
-                        <img src="imagenes/user.svg" width="13" alt="">
-                        <a href="crearcuenta.html"
+            <div class="flex-container">
+                <div class="buscador">
+                    <form action="" method="POST" id="ventana-buscador">
+                        <input name="buscar" id="buscar" type="text" placeholder="Buscar">
+                </div>
+                <div class="header-list">
+                    <div>
+                        <img src="../imagenes/user.svg" width="10" alt="">
+                    </div>
+                    <div>
+                        <a href="paginas/crearcuenta.html"
                         title="Crear cuenta"> Crear cuenta</a>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <a href="iniciarsesion.html"
                         title="Inicia sesión">Iniciar Sesión</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://nicourukol.github.io/Proyecto-Final/">
-                    <img src="imagenes/logo PNG.png" width="100" alt="TANNAT&CO" class="logo-img">
-                </a>
+            <div class="flex-container-nav">
+                <div class="logo-container">
+                    <a href="https://nicourukol.github.io/Proyecto-Final/">
+                        <img src="../imagenes/logo PNG.png" width="90" alt="TANNAT&CO" class="logo-img">
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav-list-container">
+                        <li class="nav-list">
+                            <a href=""
+                            title="Nosotros" class="corte-info">Quienes Somos</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href=""
+                            title="Port Folio" class="corte-info">Bodegas</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href=""
+                            title="Agenda de eventos" class="corte-info">Degustaciones</a>
+                        </li>
+                        <li class="nav-list"    >
+                            <a href=""
+                            title="Maridajes" class="corte-info">Sommelier Online</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carrito-container">
+                    <a href=""
+                    title="Tus compras">
+                        <img src="imagenes/cart-shopping-solid.svg" alt="" width="35">
+                    </a>
+                </div>
+                
             </div>
-            <div>
-                <h1>Bienvenidos a Tannat & CO.</h1>
-                <p><strong>Alma Oriental</strong></p>
-            </div>
-
-            <ul>
-                <li>
-                    <a href=""
-                    title="Nosotros">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Port Folio">Bodegas</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Agenda de eventos">Degustaciones</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Maridajes">Sommelier Online</a>
-                </li>
-                <li>
-                    <a href=""
-                    title="Tus compras">Carrito</a>
-                </li>
-            </ul>
         </nav>
+
     </header>
-    <body>
+    <main>
         <h2>Crear cuenta</h2>
         <h4>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h4>
-        <form action="https://formspree.io/f/mvgopjqd"
-            method="POST">
+        <form action="https://formspree.io/f/mvgopjqd" method="POST">
             <fieldset>
                 <legend>DATOS</legend>
                 <label for="nombre"><strong>NOMBRE:</strong></label>
@@ -111,7 +117,38 @@
                 <br></br>
                 <button type="submit">Enviar</button>
             </fieldset>
-    </body>
+        </form>
+    </main>
+    <footer> 
+        <p><strong>NEWSLETTER</strong></p>
+        <form action="" method="POST">
+            <label for="nombre">Nombre
+                <input name="nombre" id="nombre" type="text" placeholder="Nombre y Apellido">
+            </label>
+            <label for="mail">Mail
+                <input name="mail" id="mail" type="email" placeholder="tucorreo@ejemplo.com">
+            </label>
+        </form>
+
+        <ul>               
+                <a href="">
+                    <img src="imagenes/instagram.svg" width="20" alt="">
+                </a>
+                <a href="">
+                <img src="imagenes/whatsapp.svg" width="20" alt="">
+                </a>
+                <a href="">
+                <img src="imagenes/facebook.svg" width="20" alt="">
+                </a>
+        </ul>
+
+        <section class="footer-section">
+            <a href="" class="corte-info">Contacto</a>
+            <a href="" class="corte-info">Quienes Somos</a>
+            <a href="" class="corte-info">Preguntas Frecuentes</a>
+            <a href="" class="corte-info">Politicas de Reembolso</a>
+        </section>
+    </footer>
         
     
 </body>
