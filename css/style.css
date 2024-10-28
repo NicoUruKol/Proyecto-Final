@@ -59,9 +59,9 @@ header {
 .flex-container-nav{
     display: flex;
     justify-content: space-between;
-    height: 8rem;
-    width: 98.5vw;
+    height: 9rem;
     align-content: center;
+    flex-wrap: wrap;
     }
 
 .logo-container{
@@ -72,6 +72,8 @@ header {
 .nav-list-container{
     padding: 0;
     justify-content: center;
+    margin-top: 3rem;
+    margin-right: 12rem;
     }
 
 .nav-list {
@@ -125,21 +127,52 @@ header {
     background-color: var(--color-header);
     }
 
-.corte-info{
+.corte-info-card{
+    padding: 2rem 0;
+    margin: 1rem auto;
+    width: 120rem;
+    color: var(--color-separador);
+    text-transform: uppercase;
+    font-size: small;
     display: flex;
-    justify-content: space-evenly;
-    height: 10rem;
+    justify-content: center;
+    height: 12rem;
     align-items: center;
     flex-flow: row wrap;
-}
+    }
+
+.corte-perse-1{
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem;
+    height: 7rem;
+    }
 
 .corte-perse{
     display: flex;
-    width: 20rem;
-    justify-content: center;
+    width: 30rem;
     flex-direction: column;
-    margin: 0.5rem;
-}
+    align-items: center;
+    gap: 1rem;
+    border-left: 1px solid;
+    padding: 0.2rem;
+    height: 7rem;
+    }
+
+.promos-container{
+    display: flex;
+    flex-direction: column;
+    height: 36rem;
+    margin: 1rem;
+    }
+
+.promos-lista{
+    display: flex;
+    margin: 2rem;
+    }
 
 a   {
     padding: 10px;
