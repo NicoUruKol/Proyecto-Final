@@ -56,6 +56,18 @@
                             <a href=""
                             title="Maridajes" class="corte-info">Sommelier Virtual</a>
                         </li>
+                        <li class="nav-list"    >
+                            <a href="#combos"
+                            title="Descuento" class="corte-info">Combos</a>
+                        </li>
+                        <li class="nav-list"    >
+                            <a href="#bodega-mes"
+                            title="bodega-del-mes" class="corte-info">Bodega del mes</a>
+                        </li>
+                        <li class="nav-list"    >
+                            <a href="#novedades"
+                            title="Nuevo" class="corte-info">Novedades</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="carrito-container">
@@ -77,20 +89,6 @@
     </header>
 
     <main>
-        <section id="banner">
-            <h2>Aca ponemos banners con slide</h2>
-            <div>
-                <a href="mailto:ventas@tannat&co.com">
-                    <img src="imagenes/banner x mayor slide.webp" alt="" width="100%">
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="imagenes/banner x delivery slide.webp" alt="" width="100%">
-                </a>
-            </div>
-        </section>
-
         <section class="corte-info-card">
             <div class="corte-perse-1">
                 <img src="imagenes/house-laptop-solid.svg" alt="" width="30">
@@ -109,82 +107,129 @@
             </div>
         </section>
 
-        <section class="promos-container">
-            <div>
-                <h2>COMBOS CON DESCUENTO</h2>
+        <section>
+            <div class="banner-slide">
+                <ul>
+                    <li>
+                        <a href="mailto:ventas@tannat&co.com">
+                            <img src="imagenes/banner x mayor slide.webp" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imagenes/banner x delivery slide.webp" alt="">
+                    </li>
+                </ul>
             </div>
-            <div class="promos-lista">
+        </section>
+
+        <section class="promos-container" id="combos">
+            <h2>COMBOS CON DESCUENTO</h2>
+            <div class="promos-lista-card-container">
                 <div class="card-promo">
                     <a href="">
                         <img src="imagenes/duoCaroGarzon.jpg" alt="" width="300">
                     </a>
-                </div>
-                <div class="card-promo-miniatura">
-                    <a href="">
-                        <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
-                    </a>
+                    <h3>Duo Caro-Balasto</h3>
+                    <p><del>$ 345.800</del>   ♦  <strong>$ 294.780</strong></p>
+                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 98.260</b></p>
+                    <div class="card-promo-miniatura">
+                        <a href="">
+                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                        </a>
+                    </div>
                 </div>
                 <div class="card-promo">
                     <a href="">
                         <img src="imagenes/GarzonCopas.jpg" alt="" width="300">
                     </a>
-                </div>
-                <div class="card-promo-miniatura">
-                    <a href="">
-                        <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
-                    </a>
+                    <h3>Duo Single vineyard</h3>
+                    <p><del>$ 91.600</del>   ♦  <strong>$ 77.860</strong></p>
+                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 25.954</b></p>
+                    <div class="card-promo-miniatura">
+                        <a href="">
+                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                        </a>
+                    </div>
                 </div>
                 <div class="card-promo">
                     <a href="">
                         <img src="imagenes/GrazonBlanco.jpg" alt="" width="300">
                     </a>
+                    <h3>Trío de Blancos</h3>
+                    <p><del>$ 52.800</del>   ♦  <strong>$ 44.880</strong></p>
+                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 14.960</b></p>
+                    <div class="card-promo-miniatura">
+                        <a href="">
+                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                        </a>
+                    </div>
                 </div>
-                <div class="card-promo-miniatura">
+            </div>
+        </section>
+
+        <section class="destacados" id="bodega-mes">
+            <h2>BODEGA DEL MES</h2>
+            <div class="destacados-lista-container">
+                <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                        <img src="imagenes/Flyer Tiza.PNG" alt="" width="200">
+                    </a>
+                </div>
+                <div class="destacados-lista">
+                    <a href="">
+                        <img src="imagenes/Flyar Gualta.jpeg" alt="" width="200">
+                    </a>
+                </div>
+                <div class="destacados-lista">
+                    <a href="">
+                        <img src="imagenes/Flyer porfiado.jpg" alt="" width="200">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="destacados">
-            <h2>BODEGA DEL MES</h2>
-            <div id="destacados-lista">
-                <a href="">
-                    <img src="imagenes/Flyer Tiza.PNG" alt="" width="200">
-                </a>
-                <a href="">
-                    <img src="imagenes/Flyar Gualta.jpeg" alt="" width="200">
-                </a>
-                <a href="">
-                    <img src="imagenes/Flyer porfiado.jpg" alt="" width="200">
-                </a>
+        <section class="novedades-video" id="novedades">
+            <h2>NOVEDADES</h2>
+            <div class="novedades-list-container">
+                <div class="novedades-list">
+                    <video 
+                    src="videos/FLOR SILVESTRE.mp4" 
+                    controls
+                    width="350">
+                    </video>
+                </div>
+                <div class="novedades-list">
+                    <video 
+                    src="videos/Uruguay entre Viñas - Bodega Garzón.mp4" 
+                    controls
+                    width="350">
+                    <track src="videos/Uruguay entre Viñas - Bodega Garzón [Spanish (auto-generated).vtt"
+                    srclang="es"
+                    label="Español"
+                    default>
+                    <track
+                    src="videos/Uruguay entre Viñas - Bodega Garzón [English] [translated] [DownloadYoutubeSubtitles.com].vtt"
+                    srclang="en"
+                    label="Ingles">       
+                    </video>
+                </div>
             </div>
         </section>
-
-        <section id="novedades">
-            <h2>NOVEDADES</h2>
-            <div id="novedades-list1">
-                <video 
-                src="videos/FLOR SILVESTRE.mp4" 
-                controls
-                width="350">
-                </video>
+        <section class="corte-info-card">
+            <div class="corte-perse-1">
+                <img src="imagenes/house-laptop-solid.svg" alt="" width="30">
+                <p><strong>hacemos envios</strong></p>
+                <p>a todo el pais</p>
             </div>
-            <div id="novedades-list2">
-                <video 
-                src="videos/Uruguay entre Viñas - Bodega Garzón.mp4" 
-                controls
-                width="350">
-                <track src="videos/Uruguay entre Viñas - Bodega Garzón [Spanish (auto-generated).vtt"
-                srclang="es"
-                label="Español"
-                default>
-                <track
-                src="videos/Uruguay entre Viñas - Bodega Garzón [English] [translated] [DownloadYoutubeSubtitles.com].vtt"
-                srclang="en"
-                label="Ingles">       
-                </video>
+            <div class="corte-perse">
+                <img src="imagenes/credit-card-solid.svg" alt="" width="30">
+                <p><strong>3 cuotas sin interes</strong></p>
+                <p>con todas tus tarjetas</p>
+            </div>
+            <div class="corte-perse">
+                <img src="imagenes/truck-solid.svg" alt="" width="30">
+                <p><strong>envios gratis</strong></p>
+                <p>a CABA desde $ 30.000</p>
             </div>
         </section>
     </main>

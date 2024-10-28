@@ -7,7 +7,8 @@
 }
 
 * {
-    margin: 0 0 -0.5rem;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     }
 
@@ -40,6 +41,7 @@ header {
 
 .header-list {
     display: flex;
+    font-size: 1.5rem;
     width: 100%;
     color: var(--color-fondo);
     flex-wrap: wrap;
@@ -62,6 +64,7 @@ header {
     height: 9rem;
     align-content: center;
     flex-wrap: wrap;
+    padding-top: 2rem 0;
     }
 
 .logo-container{
@@ -96,7 +99,7 @@ header {
     align-items: center;
     background-color: var(--color-foot);
     padding: 0.5rem;
-    margin: 0 0 .5rem; 
+    margin: .5rem 0; 
     height: auto; 
     width: 7rem;
     }
@@ -125,6 +128,39 @@ header {
 
 header {
     background-color: var(--color-header);
+    }
+
+.banner-slide{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    }
+
+.banner-slide ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 8s infinite alternate ease-in-out;
+    }
+
+.banner-slide li{
+    width: 100%;
+    }
+
+.banner-slide a{
+    padding: 0;
+    }
+
+.banner-slide img{
+    width: 100%;
+    }
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    45% {margin-left: 0%;}
+
+    50% {margin-left: -100%;}
+    100% {margin-left: -100%;}    
     }
 
 .corte-info-card{
@@ -164,15 +200,61 @@ header {
 
 .promos-container{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    height: 36rem;
+    height: 56rem;
     margin: 1rem;
     }
 
-.promos-lista{
+.promos-lista-card-container{
+    width: 100%;
+    max-width: 120rem;
+    height: 43rem;
     display: flex;
-    margin: 2rem;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
     }
+
+.card-promo{
+    width: 30rem;
+    height: 38rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2rem;
+    text-align: center;
+    transition: all 0.25s;
+    }
+
+.promos-lista-card-container .card-promo:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 1.2rem 1.6rem rgba(0, 0, 0, 0.2);
+    }
+
+.card-promo-miniatura{
+    width: 3.4rem;
+    }
+
+.promos-lista-card-container .card-promo-miniatura:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1.2rem 1.6rem rgba(0, 0, 0, 0.05);
+    }
+
+.promos-lista-card-container p{
+    text-transform: uppercase;
+    color: var(--color-separador);
+    font-size: 1.5rem;
+    }
+
+.destacados-lista-container{
+    display: flex;
+    }
+
+    .novedades-list-container{
+    display: flex;
+    gap: 5rem;
+}
 
 a   {
     padding: 10px;
@@ -183,18 +265,34 @@ a   {
 
 li  {
     list-style: none;
-}
+    }
+
+.corte-titulo{
+    align-content: center;
+    }
 
 h2 {
     background-color: var(--color-separador);
     color: var(--color-fondo);
+    text-align: center;
+    height: 4rem;
+    align-content: center;
+    font-size: 2rem;
+    font-family: "Libre Caslon Text";
     }
+
+h3 {
+    text-transform: uppercase;
+    color: var(--color-separador);
+    font-size: 1.5rem;
+}
 
 body {
     background-color: var(--color-fondo);
     }
 
 footer {
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-evenly;
     height: 80px;
