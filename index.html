@@ -11,259 +11,301 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="flex-container">
-                <div class="buscador">
-                    <form action="" method="POST" id="ventana-buscador">
-                        <input name="buscar" id="buscar" type="text" placeholder="Buscar">
+    <div class="contenedor-main">
+        <header>
+            <nav>
+                <div class="flex-container">
+                    <div class="buscador">
+                        <form action="" method="POST" id="ventana-buscador">
+                            <input name="buscar" id="buscar" type="text" placeholder="Buscar">
+                    </div>
+                    <div class="header-list">
+                        <div class="miniatura-header">
+                            <img src="imagenes/user.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="./paginas/crearcuenta.html"
+                            title="Crear cuenta"> Crear cuenta</a>
+                        </div>
+                        <div>
+                            <a href="iniciarsesion.html"
+                            title="Inicia sesión">Iniciar Sesión</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="header-list">
-                    <div class="miniatura-header">
-                        <img src="imagenes/user.svg" width="10" alt="">
+                <div class="flex-container-nav">
+                    <div class="logo-container">
+                        <a href="https://nicourukol.github.io/Proyecto-Final/">
+                            <img src="imagenes/logo photoshop LARGO.png" alt="TANNAT&CO" class="logo-img">
+                        </a>
                     </div>
-                    <div>
-                        <a href="./paginas/crearcuenta.html"
-                        title="Crear cuenta"> Crear cuenta</a>
+                    <div class="nav-list-container">
+                        <ul>
+                            <li class="nav-list">
+                                <a href=""
+                                title="Nosotros" class="corte-info">Quienes Somos</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href=""
+                                title="Port Folio" class="corte-info">Bodegas</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href=""
+                                title="Agenda de eventos" class="corte-info">Degustaciones</a>
+                            </li>
+                            <li class="nav-list"    >
+                                <a href=""
+                                title="Maridajes" class="corte-info">Sommelier Virtual</a>
+                            </li>
+                            <li class="nav-list"    >
+                                <a href="#combos"
+                                title="Descuento" class="corte-info">Combos</a>
+                            </li>
+                            <li class="nav-list"    >
+                                <a href="#bodega-mes"
+                                title="bodega-del-mes" class="corte-info">Bodega del mes</a>
+                            </li>
+                            <li class="nav-list"    >
+                                <a href="#novedades"
+                                title="Nuevo" class="corte-info">Novedades</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <a href="iniciarsesion.html"
-                        title="Inicia sesión">Iniciar Sesión</a>
+                    <div class="carrito-container">
+                        <a href=""
+                        title="Tus compras">
+                            <img src="imagenes/cart-shopping-solid.svg" alt="">
+                        </a>
                     </div>
+                    
                 </div>
+            </nav>
+
+            <div class="separador" id="banner-principal">
+                <p>Bienvenidos a</p>
+                <h1><strong>Tannat & CO.</strong></h1>
+                <p><strong>Alma Oriental</strong></p>
             </div>
-            <div class="flex-container-nav">
-                <div class="logo-container">
-                    <a href="https://nicourukol.github.io/Proyecto-Final/">
-                        <img src="imagenes/logo photoshop LARGO.png" width="200" alt="TANNAT&CO" class="logo-img">
-                    </a>
+
+        </header>
+
+        <main>
+            <section class="corte-info-card">
+                <div class="corte-perse-1">
+                    <img src="imagenes/house-laptop-solid.svg" alt="">
+                    <p><strong>hacemos envios</strong></p>
+                    <p>a todo el pais</p>
                 </div>
-                <div class="nav-list-container">
+                <div class="corte-perse">
+                    <img src="imagenes/credit-card-solid.svg" alt="">
+                    <p><strong>3 cuotas sin interes</strong></p>
+                    <p>con todas tus tarjetas</p>
+                </div>
+                <div class="corte-perse">
+                    <img src="imagenes/truck-solid.svg" alt="">
+                    <p><strong>envios gratis</strong></p>
+                    <p>a CABA desde $ 30.000</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="banner-slide">
                     <ul>
-                        <li class="nav-list">
-                            <a href=""
-                            title="Nosotros" class="corte-info">Quienes Somos</a>
+                        <li>
+                            <a href="mailto:ventas@tannat&co.com">
+                                <img src="imagenes/banner x mayor slide.webp" alt="">
+                            </a>
                         </li>
-                        <li class="nav-list">
-                            <a href=""
-                            title="Port Folio" class="corte-info">Bodegas</a>
-                        </li>
-                        <li class="nav-list">
-                            <a href=""
-                            title="Agenda de eventos" class="corte-info">Degustaciones</a>
-                        </li>
-                        <li class="nav-list"    >
-                            <a href=""
-                            title="Maridajes" class="corte-info">Sommelier Virtual</a>
-                        </li>
-                        <li class="nav-list"    >
-                            <a href="#combos"
-                            title="Descuento" class="corte-info">Combos</a>
-                        </li>
-                        <li class="nav-list"    >
-                            <a href="#bodega-mes"
-                            title="bodega-del-mes" class="corte-info">Bodega del mes</a>
-                        </li>
-                        <li class="nav-list"    >
-                            <a href="#novedades"
-                            title="Nuevo" class="corte-info">Novedades</a>
+                        <li>
+                            <img src="imagenes/banner x delivery slide.webp" alt="">
                         </li>
                     </ul>
                 </div>
-                <div class="carrito-container">
-                    <a href=""
-                    title="Tus compras">
-                        <img src="imagenes/cart-shopping-solid.svg" alt="" width="30">
-                    </a>
-                </div>
-                
-            </div>
-        </nav>
+            </section>
 
-        <div class="separador" id="banner-principal">
-            <p>Bienvenidos a</p>
-            <h1><strong>Tannat & CO.</strong></h1>
-            <p><strong>Alma Oriental</strong></p>
-        </div>
-
-    </header>
-
-    <main>
-        <section class="corte-info-card">
-            <div class="corte-perse-1">
-                <img src="imagenes/house-laptop-solid.svg" alt="" width="30">
-                <p><strong>hacemos envios</strong></p>
-                <p>a todo el pais</p>
-            </div>
-            <div class="corte-perse">
-                <img src="imagenes/credit-card-solid.svg" alt="" width="30">
-                <p><strong>3 cuotas sin interes</strong></p>
-                <p>con todas tus tarjetas</p>
-            </div>
-            <div class="corte-perse">
-                <img src="imagenes/truck-solid.svg" alt="" width="30">
-                <p><strong>envios gratis</strong></p>
-                <p>a CABA desde $ 30.000</p>
-            </div>
-        </section>
-
-        <section>
-            <div class="banner-slide">
-                <ul>
-                    <li>
-                        <a href="mailto:ventas@tannat&co.com">
-                            <img src="imagenes/banner x mayor slide.webp" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <img src="imagenes/banner x delivery slide.webp" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="promos-container" id="combos">
-            <h2>COMBOS CON DESCUENTO</h2>
-            <div class="promos-lista-card-container">
-                <div class="card-promo">
-                    <a href="">
-                        <img src="imagenes/duoCaroGarzon.jpg" alt="" width="300">
-                    </a>
-                    <h3>Duo Caro-Balasto</h3>
-                    <p><del>$ 345.800</del>   ♦  <strong>$ 294.780</strong></p>
-                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 98.260</b></p>
-                    <div class="card-promo-miniatura">
+            <section class="promos-container" id="combos">
+                <h2>COMBOS CON DESCUENTO</h2>
+                <div class="promos-lista-card-container">
+                    <div class="card-promo">
                         <a href="">
-                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
+                            <img src="imagenes/duoCaroGarzon.jpg" alt="">
+                        </a>
+                        <h3>Duo Caro-Balasto</h3>
+                        <p><del>$ 345.800</del>   ♦  <strong>$ 294.780</strong></p>
+                        <p><b>3</b> <small>cuotas sin interes de </small><b>$ 98.260</b></p>
+                        <div class="card-promo-miniatura">
+                            <a href="">
+                                <img src="imagenes/cart-plus-solid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-promo">
+                        <a href="">
+                            <img src="imagenes/GarzonCopas.jpg" alt="">
+                        </a>
+                        <h3>Duo Single vineyard</h3>
+                        <p><del>$ 91.600</del>   ♦  <strong>$ 77.860</strong></p>
+                        <p><b>3</b> <small>cuotas sin interes de </small><b>$ 25.954</b></p>
+                        <div class="card-promo-miniatura">
+                            <a href="">
+                                <img src="imagenes/cart-plus-solid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-promo">
+                        <a href="">
+                            <img src="imagenes/GrazonBlanco.jpg" alt="">
+                        </a>
+                        <h3>Trío de Blancos</h3>
+                        <p><del>$ 52.800</del>   ♦  <strong>$ 44.880</strong></p>
+                        <p><b>3</b> <small>cuotas sin interes de </small><b>$ 14.960</b></p>
+                        <div class="card-promo-miniatura">
+                            <a href="">
+                                <img src="imagenes/cart-plus-solid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="destacados" id="bodega-mes">
+                <h2>BODEGA DEL MES</h2>
+                <div class="destacados-lista-container">
+                    <div class="destacados-lista">
+                        <a href="">
+                            <img src="imagenes/Flyer Tiza.PNG" alt="">
+                        </a>
+                    </div>
+                    <div class="destacados-lista">
+                        <a href="">
+                            <img src="imagenes/Flyar Gualta.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="destacados-lista">
+                        <a href="">
+                            <img src="imagenes/Flyer porfiado.jpg" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="card-promo">
-                    <a href="">
-                        <img src="imagenes/GarzonCopas.jpg" alt="" width="300">
-                    </a>
-                    <h3>Duo Single vineyard</h3>
-                    <p><del>$ 91.600</del>   ♦  <strong>$ 77.860</strong></p>
-                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 25.954</b></p>
-                    <div class="card-promo-miniatura">
-                        <a href="">
-                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
-                        </a>
+            </section>
+
+            <section class="novedades-video" id="novedades">
+                <h2>NOVEDADES</h2>
+                <div class="novedades-list-container">
+                    <div class="novedades-list">
+                        <video 
+                        src="videos/FLOR SILVESTRE.mp4" 
+                        controls>
+                        </video>
+                    </div>
+                    <div class="novedades-list">
+                        <video 
+                        src="videos/Uruguay entre Viñas - Bodega Garzón.mp4" 
+                        controls>
+                        <track src="videos/Uruguay entre Viñas - Bodega Garzón [Spanish (auto-generated).vtt"
+                        srclang="es"
+                        label="Español"
+                        default>
+                        <track
+                        src="videos/Uruguay entre Viñas - Bodega Garzón [English] [translated] [DownloadYoutubeSubtitles.com].vtt"
+                        srclang="en"
+                        label="Ingles">       
+                        </video>
                     </div>
                 </div>
-                <div class="card-promo">
-                    <a href="">
-                        <img src="imagenes/GrazonBlanco.jpg" alt="" width="300">
-                    </a>
-                    <h3>Trío de Blancos</h3>
-                    <p><del>$ 52.800</del>   ♦  <strong>$ 44.880</strong></p>
-                    <p><b>3</b> <small>cuotas sin interes de </small><b>$ 14.960</b></p>
-                    <div class="card-promo-miniatura">
-                        <a href="">
-                            <img src="imagenes/cart-plus-solid.svg" alt="" width="30">
-                        </a>
+            </section>
+
+            <section>
+                <h2>RESEÑAS</h2>
+                <div class="reseña-container">
+                    <div class="reseña-perse-1">
+                        <p class="parrafo-reseñas">
+                            <h3>Nuestros clientes nos comparten su experiencia</h3></p>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Impecable</h4>
+                        <p>"Excelente relacion precio-calidad, recomiendo"</p>
+                        <cite>Paula Rocío</cite>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Excelente servicio</h4>
+                        <p>"Rapidisima la entrega, llego en tiempo y forma, volvere a comprar"</p>
+                        <cite>Gael Tabare</cite>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Muy bueno</h4>
+                        <p>"Muy buen portfolio de productos"</p>
+                        <cite>Nacho Dell</cite>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Muy interesante</h4>
+                        <p>"Muy buen asesoramiento, quede encantada"</p>
+                        <cite>Eloisa Torres</cite>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Me encantó</h4>
+                        <p>"Muy buenas oportunidaes para comprar con descuento"</p>
+                        <cite>Patricia Fernandez</cite>
+                    </div>
+                    <div class="reseña-perse">
+                        <h4>Me encantó</h4>
+                        <p>"Muy buenas oportunidaes para comprar con descuento"</p>
+                        <cite>Patricia Fernandez</cite>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        
 
-        <section class="destacados" id="bodega-mes">
-            <h2>BODEGA DEL MES</h2>
-            <div class="destacados-lista-container">
-                <div class="destacados-lista">
+            <section class="corte-info-card">
+                <div class="corte-perse-1">
+                    <img src="imagenes/house-laptop-solid.svg" alt="">
+                    <p><strong>hacemos envios</strong></p>
+                    <p>a todo el pais</p>
+                </div>
+                <div class="corte-perse">
+                    <img src="imagenes/credit-card-solid.svg" alt="">
+                    <p><strong>3 cuotas sin interes</strong></p>
+                    <p>con todas tus tarjetas</p>
+                </div>
+                <div class="corte-perse">
+                    <img src="imagenes/truck-solid.svg" alt="">
+                    <p><strong>envios gratis</strong></p>
+                    <p>a CABA desde $ 30.000</p>
+                </div>
+            </section>
+        </main>
+
+        <footer> 
+            <p><strong>NEWSLETTER</strong></p>
+            <form action="https://formspree.io/f/mvgopjqd" method="POST">
+                <label for="nombre">Nombre
+                    <input name="nombre" id="nombre" type="text" placeholder="Nombre y Apellido">
+                </label>
+                <label for="mail">Mail
+                    <input name="mail" id="mail" type="email" placeholder="tucorreo@ejemplo.com">
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <ul>               
                     <a href="">
-                        <img src="imagenes/Flyer Tiza.PNG" alt="" width="200">
+                        <img src="imagenes/instagram.svg" alt="">
                     </a>
-                </div>
-                <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/Flyar Gualta.jpeg" alt="" width="200">
+                    <img src="imagenes/whatsapp.svg" alt="">
                     </a>
-                </div>
-                <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/Flyer porfiado.jpg" alt="" width="200">
+                    <img src="imagenes/facebook.svg" alt="">
                     </a>
-                </div>
-            </div>
-        </section>
+            </ul>
 
-        <section class="novedades-video" id="novedades">
-            <h2>NOVEDADES</h2>
-            <div class="novedades-list-container">
-                <div class="novedades-list">
-                    <video 
-                    src="videos/FLOR SILVESTRE.mp4" 
-                    controls
-                    width="350">
-                    </video>
-                </div>
-                <div class="novedades-list">
-                    <video 
-                    src="videos/Uruguay entre Viñas - Bodega Garzón.mp4" 
-                    controls
-                    width="350">
-                    <track src="videos/Uruguay entre Viñas - Bodega Garzón [Spanish (auto-generated).vtt"
-                    srclang="es"
-                    label="Español"
-                    default>
-                    <track
-                    src="videos/Uruguay entre Viñas - Bodega Garzón [English] [translated] [DownloadYoutubeSubtitles.com].vtt"
-                    srclang="en"
-                    label="Ingles">       
-                    </video>
-                </div>
-            </div>
-        </section>
-        <section class="corte-info-card">
-            <div class="corte-perse-1">
-                <img src="imagenes/house-laptop-solid.svg" alt="" width="30">
-                <p><strong>hacemos envios</strong></p>
-                <p>a todo el pais</p>
-            </div>
-            <div class="corte-perse">
-                <img src="imagenes/credit-card-solid.svg" alt="" width="30">
-                <p><strong>3 cuotas sin interes</strong></p>
-                <p>con todas tus tarjetas</p>
-            </div>
-            <div class="corte-perse">
-                <img src="imagenes/truck-solid.svg" alt="" width="30">
-                <p><strong>envios gratis</strong></p>
-                <p>a CABA desde $ 30.000</p>
-            </div>
-        </section>
-    </main>
-
-    <footer> 
-        <p><strong>NEWSLETTER</strong></p>
-        <form action="" method="POST">
-            <label for="nombre">Nombre
-                <input name="nombre" id="nombre" type="text" placeholder="Nombre y Apellido">
-            </label>
-            <label for="mail">Mail
-                <input name="mail" id="mail" type="email" placeholder="tucorreo@ejemplo.com">
-            </label>
-        </form>
-
-        <ul>               
-                <a href="">
-                    <img src="imagenes/instagram.svg" width="20" alt="">
-                </a>
-                <a href="">
-                <img src="imagenes/whatsapp.svg" width="20" alt="">
-                </a>
-                <a href="">
-                <img src="imagenes/facebook.svg" width="20" alt="">
-                </a>
-        </ul>
-
-        <section class="footer-section">
-            <a href="" class="corte-info">Contacto</a>
-            <a href="" class="corte-info">Quienes Somos</a>
-            <a href="" class="corte-info">Preguntas Frecuentes</a>
-            <a href="" class="corte-info">Politicas de Reembolso</a>
-        </section>
-    </footer>
-    
+            <section class="footer-section">
+                <a href="" class="corte-info">Contacto</a>
+                <a href="" class="corte-info">Quienes Somos</a>
+                <a href="" class="corte-info">Preguntas Frecuentes</a>
+                <a href="" class="corte-info">Politicas de Reembolso</a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
