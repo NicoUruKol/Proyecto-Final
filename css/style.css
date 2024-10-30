@@ -35,6 +35,7 @@ header {
 
 .flex-container{
     display: flex;
+    flex-wrap: wrap;
     height: 3.5rem;
     width: 100%;
     background-color: var(--color-separador);
@@ -47,6 +48,7 @@ header {
     margin: 0.5rem 0.5rem;
     height: 3rem;
     align-items: center;
+    width: 19%;
     }
 
 #ventana-buscador{
@@ -57,16 +59,15 @@ header {
 
 .header-list {
     display: flex;
-    font-size: 1.5rem;
-    width: 100%;
     color: var(--color-fondo);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 80%;
     font-family: "Libre Caslon Text";
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 8px 0px;
-    padding: 7px 200px 5px 20px;
+    margin: 0px 0px;
+    padding: 0.7rem 20rem 0.5rem 2rem;
     font-size: 8px;
     }
 
@@ -80,7 +81,6 @@ header {
     justify-content: space-between;
     height: 9rem;
     align-content: center;
-    flex-wrap: wrap;
     padding-top: 2rem 0;
     }
 
@@ -192,7 +192,6 @@ header {
 .corte-info-card{
     padding: 2rem 0;
     margin: 1rem auto;
-    width: 120rem;
     color: var(--color-separador);
     text-transform: uppercase;
     font-size: small;
@@ -200,7 +199,6 @@ header {
     justify-content: center;
     height: 12rem;
     align-items: center;
-    flex-flow: row wrap;
     }
 
 .corte-perse-1{
@@ -313,7 +311,7 @@ header {
     grid-template-rows: 1/3fr 1fr 1fr;
     justify-content: center;
 
-    width: 50%;
+    width: auto;
     margin: 2rem auto;
     background-color: rgba(237, 227, 206, 0.5);
     padding: 2rem;
@@ -411,17 +409,56 @@ ul a img{
     align-items: center;
     }
 
-@media (max-width: 1200px) {
+@media (max-width: 1218px) {
     body {
         font-size: 8px;
     }
+    .nav-list-container{
+        padding: 0;
+        justify-content: right;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        display: block;
+        align-content: stretch;
+        height: 9rem;
+        }
     }
 
-    @media (max-width: 992px) {
-
+    @media (max-width: 998px) {
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 3.5rem;
+        width: 100%;
+        background-color: var(--color-separador);
+        padding: 0px;
+        font-family: "Libre Caslon Text";
+        margin: 0px;
+        }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 899px) {
+    .corte-info-card{
+        padding: 2rem 0;
+        margin: 1rem auto;
+        color: var(--color-separador);
+        text-transform: uppercase;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        height: 12rem;
+        align-items: center;
+        }
+    }
+
+    @media (max-width: 757px) {
+    .flex-container-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 10rem;
+        align-content: center;
+        padding-top: 2rem 0;
+        }
 
     }
 
