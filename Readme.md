@@ -39,9 +39,7 @@ Este proyecto fue realizado en el marco del curso **Talento Tech 2024** de *Buen
 
 Desarrollado por **Nicolas Torres Quintero**
 
-## Licencia
 
-Este proyecto está licenciado bajo la MIT License.
 
 
 
