@@ -422,22 +422,22 @@ video {
     }
 
 .reseña-perse h4 {
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
     }
 
 .reseña-perse p {
-        margin-bottom: 1rem;
-        text-align: center;
+    margin-bottom: 1rem;
+    text-align: center;
     }
 
 .reseña-perse cite {
-        align-self: flex-end;
-        text-transform: capitalize;
-        font-style: normal;
-        font-size: 0.9rem;
+    align-self: flex-end;
+    text-transform: capitalize;
+    font-style: normal;
+    font-size: 0.9rem;
     }
 
 a   {
@@ -666,10 +666,94 @@ form button {
     font-size: 1.5rem;
     }
     
-    .footer-section a:hover {
+.footer-section a:hover {
     text-decoration: underline;
     }
+
+/*----------styles para pagina crear cuenta--------- */
+
+.crear-cuenta {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 2rem auto;
+    gap: 1rem;
+    }
+
+.crear-cuenta h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    }
+
+.newser-container {
+    width: 60%; 
+    margin: 2rem auto;
+    padding: 4rem;
+    background-color: rgba(237, 227, 206, 0.5);
+    border: 0.2rem solid var(--color-foot);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--color-separador);
+    }
     
+.newser-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 3rem; 
+    row-gap: 2.5rem; 
+    width: 100%;
+    }
+
+.newser-container form input{
+    max-width: 30rem;
+    }
+    
+legend {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    }
+    
+.crear-cuenta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    }
+    
+.crear-cuenta-group label {
+    font-weight: bold;
+    font-size: 1.4rem;
+    }
+    
+.crear-cuenta-group input {
+    width: 100%;
+    margin-left: -10px; 
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-fondo);
+    box-sizing: border-box;
+    }
+    
+/*.crear-cuenta-group form button {
+    max-width: 16rem;
+    grid-column: 2;
+    align-self:center;
+    padding: 1.2rem 2.5rem;
+    font-size: 3rem;
+    color: var(--color-fondo);
+    background-color: var(--color-foot);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    }*/
+    
+
+
+/*----------Media Queries--------- */
 
 @media (max-width: 1218px) {
     body {
