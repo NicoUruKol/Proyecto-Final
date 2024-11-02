@@ -738,64 +738,6 @@ legend {
     box-sizing: border-box;
     }
     
-.newser-container form {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    column-gap: 3rem; 
-    row-gap: 2.5rem; 
-    width: 100%;
-    }
-
-.newser-container form input{
-    max-width: 30rem;
-    }
-    
-legend {
-    grid-column: span 2;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    }
-    
-.crear-cuenta-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    }
-    
-.crear-cuenta-group label {
-    font-weight: bold;
-    font-size: 1.4rem;
-    }
-    
-.crear-cuenta-group input {
-    width: 100%;
-    margin-left: -10px; 
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--color-fondo);
-    box-sizing: border-box;
-    }
-    
-/*.crear-cuenta-group form button {
-    max-width: 16rem;
-    grid-column: 2;
-    align-self:center;
-    padding: 1.2rem 2.5rem;
-    font-size: 3rem;
-    color: var(--color-fondo);
-    background-color: var(--color-foot);
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    }*/
-    
-
-
-/*----------Media Queries--------- */
 
 /*----------Media Queries--------- */
 
