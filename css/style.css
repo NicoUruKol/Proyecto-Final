@@ -420,9 +420,9 @@ video {
     }
 
 .reseña-container .reseña-perse:hover{
-        transform: translateY(-2px);
-        box-shadow: 0 1.2rem 1.6rem rgba(87,27,45, 0.2);
-        }
+    transform: translateY(-2px);
+    box-shadow: 0 1.2rem 1.6rem rgba(87,27,45, 0.2);
+    }
 
 .reseña-perse-1{
     grid-column: 1/4;
@@ -768,7 +768,8 @@ legend {
 .titular-nosotros{
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: bold; 
+    font-weight: bold;
+    color: rgba(87,27,45, 0.8); 
 }
 
 .parrafos-nosotros{
@@ -776,6 +777,8 @@ legend {
     width: 60%;
     margin-left: 27rem;
     font-family: "Libre Caslon Text";
+    color: rgba(87,27,45, 0.8);
+    font-weight: bold;
 }
 
 .nosotros-2 {
@@ -809,24 +812,70 @@ legend {
     object-fit: cover;
     }
 
-.nosotros-3{
+.contenedor-parrafos-uvas{
     background-image: url(./uvas-tannat.jpg);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 1rem;
-    padding: 2rem;
     margin-top: 2rem;
     width: 100%;
     background-size: cover;
     background-position: center;
     height: 40vw;
-    padding: 15rem 10rem 15rem 0rem;
+    padding: 15rem 10rem 15rem 10rem;
     max-width: 100%;
     font-family: "Libre Caslon Text";
     font-size: 1.5rem;
     color: var(--color-fondo);
+    align-items: center;
+    font-weight: bold;
     }
+
+.nosotros-4{
+    background-color: #F6E5CF;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto ;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-weight: bold;
+    }
+
+.cont-p-triptico-nosotros{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: start;
+    margin-right: 10rem;
+    font-size: 1.5rem;
+    width: 60%;
+    font-family: "Libre Caslon Text";
+    color: rgba(87,27,45, 0.8);
+    }
+    
+.cont-img-triptico-nosotros{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    }
+
+.img-triptico-nosotros{
+    width: 30rem;
+    }
+
+.nosotros-5{
+    margin-top: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+.nosotros-5 img{
+    width: 100%;
+}
 
 /*----------Media Queries--------- */
 
