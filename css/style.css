@@ -12,6 +12,9 @@
     box-sizing: border-box;
     }
 
+html {
+        scroll-behavior: smooth;
+    }
 
 header {
     background-color: var(--color-header);
@@ -416,6 +419,11 @@ video {
     border-radius: 0.8rem;
     }
 
+.reseña-container .reseña-perse:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 1.2rem 1.6rem rgba(87,27,45, 0.2);
+        }
+
 .reseña-perse-1{
     grid-column: 1/4;
     text-align: center;
@@ -738,6 +746,87 @@ legend {
     box-sizing: border-box;
     }
     
+/*-------------styles para pagina Nosotros------------*/
+
+.nosotros-1 {
+    margin-top: 2rem;
+    width: 100%;
+    }
+
+.logo-contenedor-nosotros{
+    margin-top: 2rem;
+    margin-left: 25rem;
+    align-items: end;
+    display: flex; 
+    flex-wrap: wrap;
+    }
+
+.logo-img-nosotros{
+    width: 10rem;
+}
+
+.titular-nosotros{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold; 
+}
+
+.parrafos-nosotros{
+    font-size: 1.5rem;
+    width: 60%;
+    margin-left: 27rem;
+    font-family: "Libre Caslon Text";
+}
+
+.nosotros-2 {
+    background-image: url(/imagenes/02-Urugay-Tannat.png);
+    margin-top: 2rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    padding: 15rem 10rem 15rem 0rem;
+    max-width: 100%;
+    font-family: "Libre Caslon Text";
+    font-size: 1.5rem;
+    }
+
+.contenedor-titulo{
+    margin-top: 5rem;
+    margin-left: 25rem;
+    }
+
+.contenedor-img-altura{
+    width: 100%;
+    height: 55rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    }
+
+.img-altura-nosotros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.nosotros-3{
+    background-image: url(./uvas-tannat.jpg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    padding: 15rem 10rem 15rem 0rem;
+    max-width: 100%;
+    font-family: "Libre Caslon Text";
+    font-size: 1.5rem;
+    color: var(--color-fondo);
+    }
 
 /*----------Media Queries--------- */
 
@@ -757,7 +846,6 @@ legend {
     .promos-lista-card-container{
         width: 100%;
         max-width: 120rem;
-        height: 43rem;
         display: flex;
         margin: auto;
         justify-content: center;
@@ -801,9 +889,6 @@ legend {
     .reseña-container {
         grid-template-columns: 1fr;
         }  
-    .reseña-perse-1{
-        grid-column: 1/4;
-        }
     .flex-container-nav{
         height: 13rem;
         }  
