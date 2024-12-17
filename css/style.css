@@ -237,7 +237,7 @@ header {
 .promos-lista-card-container{
     width: 100%;
     max-width: 120rem;
-    height: 43rem;
+    max-height: 43rem;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -245,7 +245,7 @@ header {
 
 .card-promo{
     width: 30rem;
-    height: 38.5rem;
+    height: 100%;
     border-radius: 0.8rem;
     box-shadow: 0 2px 2px rgba(87,27,45, 0.2);
     overflow: hidden;
@@ -254,8 +254,13 @@ header {
     transition: all 0.25s;
     }
 
-.card-promo img{
+.card-promo a{
     width: 28rem;
+}
+
+.card-promo img{
+    margin-top: 2rem;
+    width: 90%;
     }
 
 
@@ -265,17 +270,22 @@ header {
     }
 
 .card-promo-miniatura{
-    width: 3.4rem;
+    width: 28rem;
     }
 
-.card-promo-miniatura img{
-    width: 3rem;
+.card-promo-miniatura img {
+        width: 3rem;
+        transition: transform 0.3s ease-in-out;
     }
-
-.promos-lista-card-container .card-promo-miniatura:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 1.2rem 1.6rem rgba(87,27,45, 0.05);
+    
+.card-promo-miniatura a:hover img {
+        content: url('../imagenes/shopping-cart-add.png'); 
     }
+    
+/*.card-promo-miniatura:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1.2rem 1.6rem rgba(87, 27, 45, 0.05);
+    }*/   
 
 .promos-lista-card-container p{
     text-transform: uppercase;
@@ -951,6 +961,8 @@ legend {
         }
 
     }
+
+/*@media (max-width: 650)*/
 
 @media (max-width: 600px) {
     .flex-container-nav{
