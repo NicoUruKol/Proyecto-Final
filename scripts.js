@@ -34,7 +34,7 @@ const productos = [
         }
     ]
 
-console.log(productos);
+/*console.log(productos);*/
 
 
 let combosPromo = "";
