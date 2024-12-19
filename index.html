@@ -74,9 +74,9 @@
                     </ul>
                 </div>
                 <div class="carrito-container">
-                    <a href=""
-                    title="Tus compras">
-                        <img src="imagenes/cart-shopping-solid.svg" alt="">
+                    <a href="#" id="abrir-modal-carrito" title="Tus compras">
+                        <img src="imagenes/cart-shopping-solid.svg" alt="Carrito">
+                        <span id="indicador-carrito" class="indicador-carrito">0</span>
                     </a>
                 </div>
                 
@@ -132,6 +132,22 @@
             </div>
         </section>
 
+        <div id="modal-carrito-compras" class="modal">
+            <div class="modal-content">
+                <span id="cerrar-modal-carrito" class="cerrar">&times;</span>
+                <h2>Carrito</h2>
+                <ul id="lista-carrito">
+                    <!-- Los artículos se cargarán dinámicamente aquí -->
+                </ul>
+                <p id="total-carrito">Total a Pagar: $ 0</p>
+                <button id="boton-seguir-comprando">Seguir Comprando</button>
+                <button id="boton-borrar">Borrar Todo</button>
+                <button id="boton-pagar">Ir a Pagar</button>
+                <p id="mensaje-carrito"></p>
+            </div>
+        </div>
+
+
         <section class="destacados" id="bodega-mes">
             <h2>BODEGA DEL MES</h2>
             <div class="destacados-lista-container">
@@ -142,17 +158,17 @@
                 </div>
                 <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/Flyer Tiza.PNG" alt="">
+                        <img src="imagenes/FlyerTiza.PNG" alt="">
                     </a>
                 </div>
                 <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/Flyar Gualta.jpeg" alt="">
+                        <img src="imagenes/FlyarGualta.jpeg" alt="">
                     </a>
                 </div>
                 <div class="destacados-lista">
                     <a href="">
-                        <img src="imagenes/Flyer porfiado.jpg" alt="">
+                        <img src="imagenes/Flyerporfiado.jpg" alt="">
                     </a>
                 </div>
             </div>

@@ -269,29 +269,99 @@ header {
     box-shadow: 0 1.2rem 1.6rem rgba(87,27,45, 0.2);
     }
 
-/*.card-promo-miniatura{
-    width: 28rem;
-    }*/
 
-.card-promo-miniatura img {
-        width: 3rem;
-        transition: transform 0.3s ease-in-out;
+.card-promo-miniatura input {
+    width: 3rem;
+    transition: transform 0.3s ease-in-out; 
     }
-    
-.card-promo-miniatura a:hover img {
-        content: url('../imagenes/shopping-cart-add.png'); 
-    }
-    
-/*.card-promo-miniatura:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1.2rem 1.6rem rgba(87, 27, 45, 0.05);
-    }*/   
+
+.card-promo-miniatura input:hover {
+    transform: scale(1.1); 
+    }   
+
 
 .promos-lista-card-container p{
     text-transform: uppercase;
     color: var(--color-separador);
     font-size: 1.5rem;
     }
+
+    /*MODAL CARRITO*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    }
+
+.modal-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    background-color: var(--color-header);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid var(--color-foot);
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    font-family: "Libre Caslon Text";
+    }
+
+.modal-content h2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+.modal-content p{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+
+.modal-content button {
+    align-self: self-end;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: var(--color-fondo);
+    background-color: var(--color-separador);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: .5rem;
+    margin: .5rem;
+    }
+
+.modal-content ul{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+.indicador-carrito {
+    position: absolute;
+    top: 10rem;
+    right: 3.5rem;
+    background-color: var(--color-separador);
+    color: var(--color-header);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px 8px;
+    display: none;
+    }
+    /*HASTA MODAL CARRITO*/
 
 .destacados-lista-container {
     width: auto;
@@ -303,7 +373,6 @@ header {
     justify-content: center;
     border-radius: 0.8rem;
     }
-
 
 .destacados-lista img{
     width: 20rem;
@@ -319,17 +388,6 @@ header {
     transition: transform 0.3s;
     }
     
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(87,27,45, 0.8);
-    }
     
 .modal-contenido {
     margin: auto;
@@ -347,7 +405,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     }
-    
+
 
 .novedades-video {
     width: auto;
@@ -765,7 +823,7 @@ legend {
 
 .logo-contenedor-nosotros{
     margin-top: 2rem;
-    margin-left: 25rem;
+    margin-left: 25%;
     align-items: end;
     display: flex; 
     flex-wrap: wrap;
@@ -785,7 +843,7 @@ legend {
 .parrafos-nosotros{
     font-size: 1.5rem;
     width: 60%;
-    margin-left: 27rem;
+    margin-left: 27%;
     font-family: "Libre Caslon Text";
     color: rgba(87,27,45, 0.8);
     font-weight: bold;
@@ -806,7 +864,7 @@ legend {
 
 .contenedor-titulo{
     margin-top: 5rem;
-    margin-left: 25rem;
+    margin-left: 25%;
     }
 
 .contenedor-img-altura{
@@ -819,7 +877,7 @@ legend {
 .img-altura-nosotros{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     }
 
 .contenedor-parrafos-uvas{
